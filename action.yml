@@ -1,0 +1,18 @@
+name: "Get GitHub's Status Page"
+description: "Greet user and get GitHub's status page"
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+  get-token:  # id of input
+    description: 'Gets GitHub token'
+    required: true
+outputs:
+  time: # id of output
+    description: "Returns GitHub's status page"
+  status: # id of output
+    description: 'GitHub status page result'
+runs:
+  using: 'node16'
+  main: 'index.js'
